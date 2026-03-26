@@ -229,18 +229,6 @@ terraform output
 terraform output public_alb_dns_name
 ```
 
-## Cost Estimation
-
-**Approximate monthly costs** (us-east-1, all in `free tier` eligible sizes):
-- VPC and data transfer: ~$0-5
-- 2x t3.micro EC2 instances (web): ~$8
-- 2x t3.micro EC2 instances (app): ~$8
-- ALB (both public and internal): ~$20
-- NAT Gateway (2x): ~$45
-- RDS db.t3.micro: ~$25 (if within free tier: $0)
-
-**Estimated Total**: $100-150/month (varies by usage)
-
 ## Maintenance
 
 ### Updating Configuration
@@ -264,15 +252,15 @@ See [DEPLOYMENT.md](DEPLOYMENT.md) for troubleshooting tips.
 
 ## Best Practices Implemented
 
-✅ **Modular Structure**: Code organized by function/tier
-✅ **Reusable Modules**: Each module is self-contained
-✅ **Variable Separation**: Clear separation of variables and values
-✅ **Git Ignore**: Sensitive files excluded from version control
-✅ **Resource Naming**: Consistent naming convention with project prefix
-✅ **Tagging**: All resources tagged with Environment and Project
-✅ **Security**: Security groups follow principle of least privilege
-✅ **High Availability**: Resources distributed across multiple AZs
-✅ **Documented**: Inline comments for complex configurations
+**Modular Structure**: Code organized by function/tier
+**Reusable Modules**: Each module is self-contained
+**Variable Separation**: Clear separation of variables and values
+**Git Ignore**: Sensitive files excluded from version control
+**Resource Naming**: Consistent naming convention with project prefix
+**Tagging**: All resources tagged with Environment and Project
+**Security**: Security groups follow principle of least privilege
+**High Availability**: Resources distributed across multiple AZs
+**Documented**: Inline comments for complex configurations
 
 ## Support and Contributing
 
