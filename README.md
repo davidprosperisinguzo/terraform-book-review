@@ -145,7 +145,7 @@ db_engine_version      = "8.0"
 
 ## Important Security Considerations
 
-⚠️ **BEFORE DEPLOYMENT**:
+**BEFORE DEPLOYMENT**:
 
 1. **SSH Access CIDR**: Update `allowed_ssh_cidr` in `terraform.tfvars` to your IP:
    ```hcl
@@ -252,15 +252,15 @@ See [DEPLOYMENT.md](DEPLOYMENT.md) for troubleshooting tips.
 
 ## Best Practices Implemented
 
-**Modular Structure**: Code organized by function/tier
-**Reusable Modules**: Each module is self-contained
-**Variable Separation**: Clear separation of variables and values
-**Git Ignore**: Sensitive files excluded from version control
-**Resource Naming**: Consistent naming convention with project prefix
-**Tagging**: All resources tagged with Environment and Project
-**Security**: Security groups follow principle of least privilege
-**High Availability**: Resources distributed across multiple AZs
-**Documented**: Inline comments for complex configurations
+- **Modular Structure**: Code organized by function/tier
+- **Reusable Modules**: Each module is self-contained
+- **Variable Separation**: Clear separation of variables and values
+- **Git Ignore**: Sensitive files excluded from version control
+- **Resource Naming**: Consistent naming convention with project prefix
+- **Tagging**: All resources tagged with Environment and Project
+- **Security**: Security groups follow principle of least privilege
+- **High Availability**: Resources distributed across multiple AZs
+- **Documented**: Inline comments for complex configurations
 
 ## Support and Contributing
 

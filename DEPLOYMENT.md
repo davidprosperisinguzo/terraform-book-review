@@ -129,7 +129,7 @@ Apply:
 terraform apply -var-file="secrets.tfvars" tfplan
 ```
 
-**⚠️ IMPORTANT**: Never commit `secrets.tfvars` or actual passwords to git!
+**IMPORTANT**: Never commit `secrets.tfvars` or actual passwords to git!
 
 ### Deployment Output
 
